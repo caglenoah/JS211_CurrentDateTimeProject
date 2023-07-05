@@ -58,7 +58,7 @@
 //   document.getElementById("str-num").innerHTML = typeof b;
 // }
 
-const typeOfVars = ("boolean, null, undefined, numbger, NaN, or a string")
+
 
 // Example usage
 // let a = true;
@@ -159,12 +159,16 @@ const typeOfVars = ("boolean, null, undefined, numbger, NaN, or a string")
 
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
-// const a = false; 
-// const b = true; 
-// if ((a && !b) || (!a && b)) {
-//   console.log("when one of two things is true");
-// }
+// const b = true;
+// const a = false;
 
+// const ifOneOfTwo = () => {
+//   if ((a && !b) || (!a && b))
+//     // console.log("when one of two things is true");
+  
+  
+//   document.getElementById("onoftwo").innerHTML = ifOneOfTwo();
+//}
 //WRONG BUT SAVE FOR LATER
 // // The logical OR ( || ) (logical disjunction) operator for a set of operands is true if and only if one or more of its operands is true. It is typically used with boolean (logical) values. When it is, it returns a Boolean value.
 // const c = false;
