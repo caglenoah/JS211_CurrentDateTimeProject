@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="./style.css">
     <script src="main.js"></script>
   </head>
   <body>
@@ -18,29 +19,35 @@
     <br>
     <button onclick="numberToString()">Click Me</button>
     <hr/>
-   
+
     <h1>String to Number</h1>
-    <div id="str-num"></div>
+    <hr/>
+    <div id="strToNum"></div>
     <br> 
     <button onclick="strToNum()">Click Me</button>
     <hr/>
     
     <h1>Variable Types</h1>
-    <div id="var-types"></div>
+    <div id="varTtypes"></div>
     <br>
     <button onclick="typeOfVars()">Click Me</button>
     <hr/>
 
+
     <h1>addTwoNumbers</h1>
     <div id="twoNum"></div>
     <br>
-    <button onclick="add()">clickMe</button>
-    <hr/>
+    <form class="calculator">
+      <label for="firstNum">First Number:</label>
+      <input type="number" id="firstNum" name="firstNum" placeholder="Type the first number" value="" onkeyup="saveFirstNumber(this.value)">
+      <label for="secondNum">Second Number:</label>
+      <input type="number" id="" name="" placeholder="Type the second number" onkeyup="saveSecondNumber(this.value)">
 
-    <h1>If two are True</h1>
-    <div id="two-true"></div>
-    <button onclick="twoAreTrue()">Click Me</button>
-    <hr/>
-    
+      <div id="result"></div>
+      <div>
+    <button type="button" name="add" id="addition" onclick="changeOperation(this.id)">Add</button>
+      </div>    
+      </form>
+      <!-- ADD EQUALS DUH!!! -->
   </body>
 </html>
