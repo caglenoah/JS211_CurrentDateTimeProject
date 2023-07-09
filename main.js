@@ -5,14 +5,14 @@
 // // //          PART ONE
 // // // ***************************
 // // // Write a JavaScript program to display the current day and time, start with:
-// // console.log(new Date)
+console.log(new Date)
 
-// const displayDate = () => {
+const displayDate = () => {
 
-//   const currentDate = new Date();
+  const currentDate = new Date();
   
-//   document.getElementById("display-element").innerHTML = currentDate;
-// }
+  document.getElementById("display-element").innerHTML = currentDate;
+}
 
 // // // Write a JavaScript program to convert a number to a string.
 // const numberToString = () => {
@@ -27,36 +27,38 @@
 // }
 
 // // Write a JavaScript program to convert a string to the number.
-// const strToNum = () => {
-//   a = "144";
-//   const b = parseInt(a);
-//   console.log(typeof b)
-//   document.getElementById("str-num").innerHTML = typeof b;
-// }
+const printDataType = (data) => {
+if (typeof data === 'boolean') {
+  console.log(data + ' is a boolean.');
+} else if (data === null) {
+  console.log(data + ' is null.');
+} else if (typeof data === 'undefined') {
+    console.log(data + ' is undefined.');
+  } else if (typeof data === 'number') {
+    if (isNaN(data)) {
+      console.log(data + ' is NaN.');
+    } else {
+      console.log(data + ' is a number.');
+    }
+  } else if (typeof data === 'string') {
+    console.log(data + ' is a string.');
+  } else {
+    console.log('Unknown data type.');
+  }
+  document.getElementById("str-num").innerHTML = typeof b;
+}
+const strToNum = () => {
+  a = "144";
+  const b = parseInt(a);
+  console.log(typeof b)
+  document.getElementById("str-num").innerHTML = typeof b;
+}
+
+///
 
 
 
-// // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
-// const printDataType = (data) => {
-//   if (typeof data === 'boolean') {
-//     console.log(data + ' is a boolean.');
-//   } else if (data === null) {
-//     console.log(data + ' is null.');
-//   } else if (typeof data === 'undefined') {
-//     console.log(data + ' is undefined.');
-//   } else if (typeof data === 'number') {
-//     if (isNaN(data)) {
-//       console.log(data + ' is NaN.');
-//     } else {
-//       console.log(data + ' is a number.');
-//     }
-//   } else if (typeof data === 'string') {
-//     console.log(data + ' is a string.');
-//   } else {
-//     console.log('Unknown data type.');
-//   }
-//   document.getElementById("str-num").innerHTML = typeof b;
-// }
+// Write a JavaScript program that takes in different datatypes and prints out whether they are a:
 
 
 
@@ -76,33 +78,34 @@
 // printDataType(e);  // Output: Hello is a string.
 // printDataType(f);  // Output: 123 is a string.
 // printDataType(g);  // Output: NaN is NaN.
-    
-//   //  Boolean
-//  let b = true 
-//  console.log("b is " + typeof b)
-  
-//  ////  Null
-//   let d = null
-//   console.log("d is " + d)
-  
-//  //  Undefined
-//   let c;
-//   console.log("c is " + typeof c)
-  
-// //   Numbers
-//   let e = 123 
-//   console.log("e is a " + typeof e)
-  
-// //   NaN
-//   let a = 25 * '100f' 
-//   console.log("a is " + a)
-  
-// //   String
-//   let f = '123'
-//   console.log("f is type " + typeof f)
 
-//   getComputedStyle.ElementById("var-types").innerHTML = "The typeof a is " + typeof a;
-// }
+typeOfVars() = () =>
+  //Boolean
+  let g == true; 
+ console.log("g is " + typeof g)
+
+ ////  Null
+  let d = null
+  console.log("d is " + d)
+
+ //  Undefined
+  let c;
+  console.log("c is " + typeof c)
+  
+//   Numbers
+  let e = 123 
+  console.log("e is a " + typeof e)
+  
+//   NaN
+  let a = 25 * '100f' 
+  console.log("a is " + a)
+  
+//   String
+  let f = '123'
+  console.log("f is type " + typeof f)
+
+  getComputedStyle.ElementById("var-types").innerHTML = "The typeof a is " + typeof a;
+
   
   
   // I THINK I AM JUST MISSING THE EQUALS I WILL COME BACK TO THIS!!!!!
